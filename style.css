@@ -1,0 +1,467 @@
+/* common code starts here */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    outline: 0; 
+    font-weight: 400;
+}
+html{
+    scroll-behavior: smooth;
+    background-color: #fafafa;
+    font-size: 1.1rem;
+    /* font-family: 'Italianno', cursive; */
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background: #fff;
+    max-width: 1250px;
+    margin: auto;
+    box-shadow: 2px 2px 2px #c4c4c4, -2px 0 2px #c4c4c4
+}
+.textjustify{
+   text-align: justify;
+}
+.text-heading{
+    font-size: 80px;
+    font-family: 'Italianno', cursive;
+}
+.text-color{
+    color:white;
+}
+.section-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    min-height:700px ;
+    padding:80px 40px;
+}
+.btn{
+    background: hsl(44, 100%, 50%);
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    font-size: 25px;
+    padding: 5px;
+    cursor: pointer;
+    letter-spacing: 0.5px;
+    box-shadow: 1px 1px 1px;
+}
+/* common code ends here */
+/* header starts here */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items:center ;
+    padding: 15px 10px;
+    min-height: 5vh;
+    background: black;
+    color: white;
+    position: sticky;
+    z-index: 10;
+    top: 0;
+}
+.logo-figure{
+    border: 1px solid white;
+}
+.logo{
+    font-size: 40px;
+}
+nav li{
+    display: inline-block;
+    padding: 10px 5px;
+    margin-right: 32px;
+   transition: all 0.4s;
+}
+nav li :last-child{
+    margin-right:none ;
+    padding: 0;
+}
+nav li:hover{
+background: blue;
+border-radius:5px;
+}
+.nav-link{
+   color:white;
+}
+/* header ends here */
+/* banner section starts here */
+main{
+    margin-top: 70px;
+}
+#banner-section{
+    padding: 0 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 70px;
+}
+#banner-section article{
+   flex-basis: 50%;
+   margin-right: 30px;
+}
+#banner-section aside{
+    flex-basis: 50%; 
+ }
+.banner-head{
+    display: inline-block;
+     font-size: 40px;
+     background: black;
+     color: white;
+     padding: 5px 5px;
+     margin-bottom: 5px;
+ }
+ .banner-descrip{
+     font-size: 18px;
+ }
+#banner-section img{
+    width:600px;
+    height: 600px;
+    border: 2px solid black;
+}
+/* about me section starts here */
+    #about-section{
+        min-height:700px ;
+        background: #726767;
+        padding:80px 40px;
+    }
+    .card-container{
+        display: flex;
+        align-items: center;
+    }
+    .card{
+        flex: 1;
+        background: #cec1c1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding:49px 7px;
+        margin:20px;
+       transition: transform 0.3s;
+       border-radius: 5px;
+    }
+    .card:hover{
+        transform: scale(1.1);
+    }
+    .card-head{
+        font-size: 32px;
+        text-align: center;
+    }
+    .card-des{
+        font-size: 16px;
+        padding: 0 5px;
+        align-items: justify;
+        margin: 30px 0 50px 0;
+    }
+    .card-btn{
+        text-align: center;
+        width: 80%; 
+        cursor: pointer;
+    }
+/* about me section ends here */
+/* archives starts here */
+
+    .archives-container{
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 32px;
+    }
+    .archivers-container-lists{
+        display: flex;
+        align-items: center;
+    }
+    .archives-container-list{
+        margin: 15px;
+    }
+    .archives-img{
+        width:100%;
+        height: 100%;
+        border-radius: 5px;
+        transition: transform 0.3s;
+    }
+    .archives-img:hover{
+      transform: scale(1.1);
+    }
+/* archives ends here */
+/* blog-post starts here */
+.blog-head{
+    margin-bottom: 40px;
+}
+.blog-posts{
+    display: flex;
+    width: 80%;
+    margin: 10px;
+    box-shadow: 1px 1px 1px black, -1px 0 1px black;
+    transition: transform 0.3s;
+}
+.blog-posts:hover{
+    transform:scale(1.1)
+}
+.blog-post-img{
+    flex: 1;
+}
+.blog-article{
+    flex: 2;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 25px;
+    text-align: justify;
+}
+.blog-img{
+    height: 100%;
+    width: 100%;
+}
+.blog-heading{
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+.blog-subheading{
+    font-size: 25px;
+}
+.blog-des{
+    font-size:20px ;
+    margin: 15px 0;
+}
+.blog-btn{
+    width: 40%;
+}
+/* blog-post ends here */
+/* contact starts here*/
+#contact-section{
+    background: #4c4c4c;
+}
+#contact-form{
+    box-shadow: 1px 1px 1px black, -1px 0 1px black;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.contact-head{
+   color:white;
+}
+.form-control{
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: center;
+}
+.form-control label{
+    flex: 0.3;
+    font-size: 16px;
+    color: white;
+}
+input,textarea{
+    flex:0.7;
+    width:400px ;
+    padding: 20px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 24px;
+}
+textarea{
+    resize: none;
+}
+.contact-btn{
+    width: 30%;
+}
+.sumbit-btn-field{
+    display: flex;
+    justify-content: flex-end;
+}
+/* contact ends here*/
+/* banner section ends here */
+
+/* footer starts here */
+footer{
+    background: black;
+    color: white;
+    min-height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+footer ul li a{
+    color:white;
+    font-size:25px;
+}
+/* footer starts here */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* responsive starts here */
+@media (max-width:992px){
+    #banner-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #banner-section article{
+       flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width:50%;
+        margin-bottom:20px
+     }
+     #banner-section aside{
+        width:55%;
+        margin-bottom:30px
+     }
+     #banner-section img{
+        width:500px;
+        height: 500px;
+    }
+    .card-container{
+        flex-direction: column;
+        width: 50%;
+        flex-wrap: wrap;
+    }
+}
+@media (max-width:768px){
+    #banner-section article{
+        flex-direction: column;
+        width:80%;
+        margin-bottom:20px
+     }
+     #banner-section aside{
+        width:75%;
+        margin-bottom:30px
+     }
+     .banner-head{
+       font-size: 30px;
+     }
+     .banner-descrip{
+        font-size: 15px;
+       align-items: center;
+       padding: 10px 0;
+    }
+    .card-container{
+        width: 80%;
+    }
+    #archives-section{
+        min-height: auto;
+    }
+    .blog-posts{
+        display: flex;
+        flex-direction: column; 
+    }
+    #contact-section{
+        min-height: auto;
+    }
+}
+@media (max-width:600px){
+    html{
+        font-size: 15px;
+    }
+    header{
+        flex-direction: column;
+    }
+    nav ul{
+        padding-left: 30px;
+    }
+    nav li{
+        display: block;
+        margin-right: 0;
+        margin: 16px 0;
+    }
+    #banner-section article{
+        flex-direction: column;
+        max-width:100%;
+        margin-bottom:20px;
+     }
+     
+     #banner-section img{
+      max-width: 100%;
+    }
+    .banner-head{
+        font-size: 25px;
+      }
+      .banner-descrip{
+         font-size: 13px
+     }
+     .card-container{
+        width: 90%;
+    }
+    #about-section{
+        min-height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .archivers-container-lists{
+        flex-wrap: wrap;
+    }
+    .blog-posts{
+        width: 90%; 
+    }
+    #contact-section{
+        width: 100%;
+    }
+    .form-control{
+        flex-direction: column;
+    }
+    .form-control label{
+        margin-bottom: 10px;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        padding-top: 20px;
+    }
+    #menubar2{
+        display: flex;
+    }
+}
+@media (max-width:400px){
+    #banner-section article{
+        max-width:100%;
+        margin-bottom:20px;
+        align-items: center; 
+     }
+     #banner-section aside{
+         width: 86%;  
+     }
+     
+     #banner-section img{
+        width: 300px;
+        height: 300px;
+       align-items: center;
+    }
+    .banner-head{
+        font-size: 25px;
+      }
+      .banner-descrip{
+         font-size: 13px
+     }
+     .blog-posts{
+        min-height: auto;
+        width: 100%; 
+    }
+    .btn{
+       font-size: 15px;
+    }
+   
+    input,textarea{
+        width:250px ;
+        padding: 5px 15px;
+    }
+    
+/* responsive ends here */
